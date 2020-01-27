@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Flawless Pigeons</title>
+</head>
+<body>
+    <h1>Welcome To Nashville</h1>
+    <h3>Plan your itinerary</h3>
+    <fieldset>
+        <input type="text" name="parks" placeholder="Search parks">
+        <button>Search</button>
+    </fieldset>
+    <fieldset>
+        <input type="text" name="art" placeholder="Search art">
+        <button>Search</button>
+    </fieldset>
+    <fieldset>
+        <input type="text" name="restaurants" placeholder="Search restaurants">
+        <button>Search</button>
+    </fieldset>
+    <fieldset>
+        <input type="text" name="concerts" placeholder="Search concerts">
+        <button>Search</button>
+    </fieldset>
+
+    <!-- Holds each itinerary choice in its own seperate div, while still within the itinerary container. Should be stacked on top of each other. -->
+    <article id="itineraryContainer">
+        <div id="parkContainer"></div>
+        <div id="artContainer"></div>
+        <div id="restaurantsContainer"></div>
+        <div id="concertContainer"></div>
+    </article>
+    
+    <!-- Shows all search results. Will only display the category that is currently being searched for. Will be displayed under the saved itinerary -->
+    <article id="searchedResults">
+
+    </article>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
