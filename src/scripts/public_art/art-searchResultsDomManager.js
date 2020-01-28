@@ -17,7 +17,10 @@ const searchResultsDomManager = {
         `;
     },
     renderSearchResults(searchResults) {
+
         console.log("renderSearchResults");
+
+        favoriteEventManager.removeFavoriteEventListeners();
 
         const container = document.querySelector("#searchedResults");
     container.innerHTML = "";
@@ -25,6 +28,8 @@ const searchResultsDomManager = {
     for (let i=0; i<searchResults.length; i++) {
       const artwork = searchResults[i];
       container.innerHTML += this.publicArtFactory(artwork, i);
+
+      favoriteEventManager.addFavoriteEventListeners();
     }
     }
 }
