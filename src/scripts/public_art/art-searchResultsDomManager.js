@@ -4,7 +4,7 @@ const searchResultsDomManager = {
 
         return `
         <section id="artwork-${index}" class="artwork">
-            <div id="location-${index}" class="artwork_location">
+            <div id="artAndArtist-${index}" class="artwork_location">
             ${artwork.artwork} by ${artwork.first_name} ${artwork.last_name}
             </div>
             <div id="location-${index}" class="art-location">
@@ -20,7 +20,7 @@ const searchResultsDomManager = {
 
         console.log("renderSearchResults");
 
-        favoriteEventManager.removeFavoriteEventListeners();
+        // favoriteEventManager.removeFavoriteEventListeners();
 
         const container = document.querySelector("#searchedResults");
     container.innerHTML = "";
