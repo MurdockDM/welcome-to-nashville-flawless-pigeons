@@ -2,6 +2,8 @@ const searchResultsDomManager = {
     publicArtFactory(artwork, index) {
         console.log("publicArtFactory");
 
+
+        
         return `
         <section id="artwork-${index}" class="artwork">
             <div id="location-${index}" class="artwork_location">
