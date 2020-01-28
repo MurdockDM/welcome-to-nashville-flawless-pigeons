@@ -19,8 +19,8 @@
         <button>Search</button>
     </fieldset>
     <fieldset>
-        <input type="text" name="restaurants" placeholder="Search restaurants">
-        <button>Search</button>
+        <input type="text" name="restaurants" id="restaurantSearchCriteria" placeholder="Search restaurants by cuisine">
+        <button id="restaurantSearchButton">Search</button>
     </fieldset>
     <fieldset>
         <input type="text" name="concerts" placeholder="Search concerts">
@@ -41,5 +41,11 @@
     </article>
     
     <script src="scripts/main.js"></script>
+    <script src="scripts/zomatoAPI/zomatoAPIKey.js"></script>
+    <script src="scripts/zomatoAPI/restaurantsAPIManager.js"></script>
+    <script src="scripts/zomatoAPI/saveToItineraryEvent.js"></script>
+    <script src="scripts/zomatoAPI/searchResultsDomFactory.js"></script>
+    <script src="scripts/zomatoAPI/searchRestaurantsEventListener.js"></script>
+    <script src="scripts/zomatoAPI/mainZomato.js"></script>
 </body>
 </html>
