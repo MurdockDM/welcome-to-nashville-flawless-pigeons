@@ -9,7 +9,7 @@ const searchEventManager = {
             console.log("button click handler");
 
             const input = document.getElementById("art--search--input");
-            const searchCriteria = input.nodeValue;
+            const searchCriteria = input.value;
             const searchResultPromise = apiManager.searchPublicArt(searchCriteria);
             searchResultPromise.then(searchResults => {
                 searchResultsDomManager.renderSearchResults(searchResults);})
