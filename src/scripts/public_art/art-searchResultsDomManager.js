@@ -11,7 +11,7 @@ const searchResultsDomManagerArt = {
             ${artwork.location}
             </div>
             <button id="favorite-${index}" class="artwork_favorite">
-            Favorite &#11088
+            Add &#11088
             </button>
         </section>
         `;
