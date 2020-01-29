@@ -1,4 +1,4 @@
-const searchResultsDomManager = {
+const searchResultsDomManagerPark = {
     parkFactory(park, index) {
         console.log("parkFactory")
 
@@ -13,22 +13,26 @@ const searchResultsDomManager = {
                     ADA Accessible: ${park.ada_accessible}
                 </div>
                 <button id="favorite-${index}" class="park__favorite">
-                    Favorite &#11088;
+                    Add &#11088;
                 </button>
             </section>
         `
     },
 
-    renderSearchResults(searchResults) {
+    renderSearchResultsPark(searchResults) {
 
         console.log("renderSearchResults")
 
-        const container = document.getElementById("parkContainer")
+        favoriteEventManagerPark.removeFavoriteEventListeners()
+
+        const container = document.getElementById("searchedResults")
         container.innerHTML = ""
 
         for (let i = 0; i < searchResults.length; i++) {
             const park = searchResults[i]
             container.innerHTML += this.parkFactory(park, i)
+
+            favoriteEventManagerPark.addFavoriteEventListeners()
         }
     }
 }

@@ -1,6 +1,6 @@
 const parkUrl = "https://data.nashville.gov/resource/74d7-b74t.json"
 
-const apiManager = {
+const apiManagerPark = {
     searchParks(searchCriteria) {
 
         const criteria = searchCriteria.toUpperCase();

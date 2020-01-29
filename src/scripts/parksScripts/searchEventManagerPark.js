@@ -1,4 +1,4 @@
-const searchEventManager = {
+const searchEventManagerPark = {
     addSearchClickEventListener() {
         console.log("addSearchClickEventListener")
 
@@ -10,11 +10,11 @@ const searchEventManager = {
 
             const input = document.getElementById("parkInput")
             const searchCriteria = input.value
-            const searchResultPromise = apiManager.searchParks(searchCriteria)
+            const searchResultPromise = apiManagerPark.searchParks(searchCriteria)
 
             searchResultPromise.then(searchResults => {
                 console.log(searchResults)
-                searchResultsDomManager.renderSearchResults(searchResults);
+                searchResultsDomManagerPark.renderSearchResultsPark(searchResults);
             })
         })
     }
