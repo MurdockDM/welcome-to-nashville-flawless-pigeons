@@ -8,7 +8,7 @@ const apiManagerPark = {
 
         const url = parkUrl + `?$where=UPPER(park_name) like '%25${criteria}%25'`;
 
-        console.log(url)
+        // console.log(url)
         return fetch(url).then(resp => resp.json())
     }
 }

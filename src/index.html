@@ -13,62 +13,71 @@
     <h1>Welcome To Nashville</h1>
     <h3>Plan your itinerary</h3>
     <fieldset>
-        <input type="text" name="parks" placeholder="Search parks" id="parkInput">
-        <button id="search-btn">Search</button>
+        <input class="input_box" type="text" name="parks" placeholder="Search parks" id="parkInput">
+        <button class="search_button" id="search-btn">Search</button>
     </fieldset>
     <fieldset>
-        <input id="art--search--input" type="text" name="art" placeholder="Search art">
-        <button id="art--button">Search</button>
+        <input class="input_box" id="art--search--input" type="text" name="art" placeholder="Search art">
+        <button class="search_button" id="art--button">Search</button>
     </fieldset>
     <fieldset>
-        <input type="text" name="restaurants" id="restaurantSearchCriteria" placeholder="Search restaurants by cuisine">
-        <button id="restaurantSearchButton">Search</button>
+        <input class="input_box" type="text" name="restaurants" id="restaurantSearchCriteria"
+            placeholder="Search restaurants by cuisine">
+        <button class="search_button" id="restaurantSearchButton">Search</button>
     </fieldset>
     <fieldset>
-        <input type="text" id="concert-input" name="concerts" placeholder="Search concerts">
-        <button id="concert-button">Search</button>
+        <input class="input_box" type="text" id="concert-input" name="concerts" placeholder="Search concerts">
+        <button class="search_button" id="concert-button">Search</button>
     </fieldset>
 
-    <!-- Holds each itinerary choice in its own seperate div, while still within the itinerary container. Should be stacked on top of each other. -->
-    <article id="itineraryContainer">
-        <div id="parkContainer"></div>
-        <div id="artContainer"></div>
-        <div id="restaurantsContainer"></div>
-        <div id="concertContainer"></div>
-    </article>
+    <section class="itinerary_box">
+        <h3>Itinerary:</h3>
+
+        <!-- Holds each itinerary choice in its own seperate div, while still within the itinerary container. Should be stacked on top of each other. -->
+        <article id="itineraryContainer">
+            <div id="parkContainer"></div>
+            <div id="artContainer"></div>
+            <div id="restaurantsContainer"></div>
+            <div id="concertContainer"></div>
+        </article>
+        <br>
+    </section>
 
     <!-- Shows all search results. Will only display the category that is currently being searched for. Will be displayed under the saved itinerary -->
-    <article id="searchedResults">
 
-    </article>
-    
-    
-    
+    <h3>Search Results:</h3>
+    <article id="searchedResults"></article>
+
+    <!-- Parks Scripts -->
+    <script src="scripts/parksScripts/apiManagerPark.js"></script>
+    <script src="scripts/parksScripts/searchResultsDomManagerPark.js"></script>
+    <script src="scripts/parksScripts/favoriteEventManagerPark.js"></script>
+    <script src="scripts/parksScripts/searchEventManagerPark.js"></script>
+    <script src="scripts/parksScripts/mainPark.js"></script>
+
+    <!-- Art Scripts -->
     <script src="scripts/public_art/art-apiManager.js"></script>
     <script src="scripts/public_art/art-searchResultsDomManager.js"></script>
     <script src="scripts/public_art/art-favoriteEventManager.js"></script>
     <script src="scripts/public_art/art-searchEventsManager.js"></script>
     <script src="scripts/public_art/art-main.js"></script>
 
-    <script src="scripts/concertsAPIkey.js"></script>
-    <script src="scripts/concertsAPImanager.js"></script>
-    <script src="scripts/concertResultsDomManager.js"></script>
-    <script src="scripts/savedConcertEventManager.js"></script>
-    <script src="scripts/concertEventManager.js"></script>
-    <script src="scripts/main.js"></script>
-    
+    <!-- Restaurants Scripts -->
     <script src="scripts/zomatoAPI/zomatoAPIKey.js"></script>
     <script src="scripts/zomatoAPI/restaurantsAPIManager.js"></script>
     <script src="scripts/zomatoAPI/saveToItineraryEvent.js"></script>
     <script src="scripts/zomatoAPI/searchResultsDomFactory.js"></script>
     <script src="scripts/zomatoAPI/searchRestaurantsEventListener.js"></script>
     <script src="scripts/zomatoAPI/mainZomato.js"></script>
-    
-    <script src="scripts/parksScripts/apiManagerPark.js"></script>
-    <script src="scripts/parksScripts/searchResultsDomManagerPark.js"></script>
-    <script src="scripts/parksScripts/favoriteEventManagerPark.js"></script>
-    <script src="scripts/parksScripts/searchEventManagerPark.js"></script>
-    <script src="scripts/parksScripts/mainPark.js"></script>
+
+    <!-- Concerts Scripts -->
+    <script src="scripts/concert_scripts/concertsAPIkey.js"></script>
+    <script src="scripts/concert_scripts/concertsAPImanager.js"></script>
+    <script src="scripts/concert_scripts/concertResultsDomManager.js"></script>
+    <script src="scripts/concert_scripts/savedConcertEventManager.js"></script>
+    <script src="scripts/concert_scripts/concertEventManager.js"></script>
+    <script src="scripts/concert_scripts/concertsMain.js"></script>
+
 
 </body>
 

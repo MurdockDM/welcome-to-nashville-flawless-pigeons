@@ -4,7 +4,7 @@ const savedConcertEventHandler = (evt) => {
 
   const venueDiv = document.getElementById(`venue-${index}`);
   const artistDiv = document.getElementById(`artist-${index}`);
-  const savedConcert = `${artistDiv.textContent.trim()} at ${venueDiv.textContent.trim()}<br><br>`;
+  const savedConcert = `<strong>Concert: </strong>${artistDiv.textContent.trim()} at ${venueDiv.textContent.trim()}`;
   const concertItinerary = document.getElementById("concertContainer");
   concertItinerary.innerHTML = savedConcert;
 };

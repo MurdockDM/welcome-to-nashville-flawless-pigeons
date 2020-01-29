@@ -2,7 +2,7 @@ const artBaseUrl = "https://data.nashville.gov/resource/eviu-nxp6.json";
 
 const apiManagerArt = {
     searchPublicArt(searchCriteria) {
-        console.log("searchPublicArt")
+        // console.log("searchPublicArt")
 
         const criteria = searchCriteria.toUpperCase();
         const url = artBaseUrl + `?$where=UPPER(description) like '%25${criteria}%25'`;

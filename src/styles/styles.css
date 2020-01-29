@@ -2,3 +2,24 @@
     margin: 2rem 0rem 2rem 0rem;
     padding: 1rem;
 }
+
+.input_box {
+    width: 40%
+}
+
+.itinerary_box {
+    background-color: #f0f0f0;
+}
+
+body {
+    font-size: larger;
+}
+
+.add_button, .search_button, .input_box, .restaurant_saveBtn{
+    font-size: large;
+}
+
+.inline
+{
+    display: inline-block;
+}

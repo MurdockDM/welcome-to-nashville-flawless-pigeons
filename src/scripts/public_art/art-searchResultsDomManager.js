@@ -1,6 +1,6 @@
 const searchResultsDomManagerArt = {
     publicArtFactory(artwork, index) {
-        console.log("publicArtFactory");
+        // console.log("publicArtFactory");
 
         return `
         <section id="artwork-${index}" class="artwork">
@@ -10,15 +10,19 @@ const searchResultsDomManagerArt = {
             <div id="location-${index}" class="art-location">
             ${artwork.location}
             </div>
-            <button id="favorite-${index}" class="artwork_favorite">
-            Add &#11088
+            <a target="_blank" id="art-url-${index}" class="art-url" href="${artwork.page_link.url}">More Info
+            </a>
+            <br>
+            <button class="add_button" id="favorite-${index}" class="artwork_favorite">
+            Add &#128396
             </button>
+            <br></br>
         </section>
         `;
     },
     renderSearchResults(searchResults) {
 
-        console.log("renderSearchResults");
+        // console.log("renderSearchResults");
 
         // favoriteEventManagerArt.removeFavoriteEventListeners();
 

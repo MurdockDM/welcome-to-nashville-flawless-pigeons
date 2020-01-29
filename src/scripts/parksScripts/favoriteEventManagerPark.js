@@ -5,7 +5,7 @@ const favoriteEventHandlerPark = (evt) => {
     const parkDiv = document.getElementById(`park_name-${index}`)
     const adaDiv = document.getElementById(`park__ada-accessible-${index}`)
 
-    const infoToSave = `${parkDiv.textContent.trim()}: ${adaDiv.textContent.trim()}`;
+    const infoToSave = `<strong>Park: </strong>${parkDiv.textContent.trim()}: ${adaDiv.textContent.trim()}`;
     const itinerary = document.getElementById("parkContainer")
     itinerary.innerHTML = infoToSave
 
