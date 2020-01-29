@@ -1,6 +1,6 @@
 const artBaseUrl = "https://data.nashville.gov/resource/eviu-nxp6.json";
 
-const apiManager = {
+const apiManagerArt = {
     searchPublicArt(searchCriteria) {
         console.log("searchPublicArt")
 

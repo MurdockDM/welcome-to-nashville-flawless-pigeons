@@ -1,4 +1,4 @@
-const searchResultsDomManager = {
+const searchResultsDomManagerArt = {
     publicArtFactory(artwork, index) {
         console.log("publicArtFactory");
 
@@ -20,16 +20,16 @@ const searchResultsDomManager = {
 
         console.log("renderSearchResults");
 
-        // favoriteEventManager.removeFavoriteEventListeners();
+        // favoriteEventManagerArt.removeFavoriteEventListeners();
 
         const container = document.querySelector("#searchedResults");
-    container.innerHTML = "";
+        container.innerHTML = "";
 
-    for (let i=0; i<searchResults.length; i++) {
-      const artwork = searchResults[i];
-      container.innerHTML += this.publicArtFactory(artwork, i);
+        for (let i = 0; i < searchResults.length; i++) {
+            const artwork = searchResults[i];
+            container.innerHTML += this.publicArtFactory(artwork, i);
 
-      favoriteEventManager.addFavoriteEventListeners();
-    }
+            favoriteEventManagerArt.addFavoriteEventListeners();
+        }
     }
 }

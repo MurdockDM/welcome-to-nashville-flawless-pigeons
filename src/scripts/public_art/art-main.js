@@ -1,1 +1,1 @@
-searchEventManager.addEventListenerFunction();
+searchEventManagerArt.addEventListenerFunction();

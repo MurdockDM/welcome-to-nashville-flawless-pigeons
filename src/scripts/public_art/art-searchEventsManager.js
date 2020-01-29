@@ -1,4 +1,4 @@
-const searchEventManager = {
+const searchEventManagerArt = {
     addEventListenerFunction() {
         console.log("addSearchClickEventListener");
 
@@ -10,9 +10,9 @@ const searchEventManager = {
 
             const input = document.getElementById("art--search--input");
             const searchCriteria = input.value;
-            const searchResultPromise = apiManager.searchPublicArt(searchCriteria);
+            const searchResultPromise = apiManagerArt.searchPublicArt(searchCriteria);
             searchResultPromise.then(searchResults => {
-                searchResultsDomManager.renderSearchResults(searchResults);})
+                searchResultsDomManagerArt.renderSearchResults(searchResults);})
         })
     }
 }
