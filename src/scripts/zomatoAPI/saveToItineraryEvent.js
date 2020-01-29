@@ -1,5 +1,5 @@
 
-const itinerarySaveHandler = (evt) => {
+const restaurantItinerarySaveHandler = (evt) => {
     const buttonId = evt.target.id;
     const index = buttonId.split('-')[1];
 
@@ -18,14 +18,14 @@ const restaurantSaveManager = {
     addRestaurantSaveEventListener () {
         const restbuttons = document.querySelectorAll(".restaurant_saveBtn");
         for (let restbutton of restbuttons) {
-            restbutton.addEventListener("click", itinerarySaveHandler);
+            restbutton.addEventListener("click", restaurantItinerarySaveHandler);
         }
     },
 
     removeRestaurantSaveEventListener () {
         const restbuttons = document.querySelectorAll(".restaurant_saveBtn");
         for (let restbutton of restbuttons) {
-            restbutton.removeEventListener("click", itinerarySaveHandler);
+            restbutton.removeEventListener("click", restaurantItinerarySaveHandler);
         }
     }
 }

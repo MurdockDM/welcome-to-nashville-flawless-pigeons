@@ -1,6 +1,6 @@
 
 
-searchResultsDomFactory = {
+searchRestaurantResultsDomFactory = {
     resultsFactory(eachRestaurant, index) {
         console.log("resultsFactory");
         return `

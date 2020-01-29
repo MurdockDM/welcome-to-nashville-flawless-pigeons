@@ -12,7 +12,7 @@ const searchRestaurantsListener = {
             const searchEntry = searchCriteria.value;
             const restaurantSearchPromise = zomatoAPIManager.searchRestaurants(searchEntry);
             restaurantSearchPromise.then(searchResults => {
-                searchResultsDomFactory.renderRestaurantResults(searchResults);
+                searchRestaurantResultsDomFactory.renderRestaurantResults(searchResults);
             })
         })
     }
