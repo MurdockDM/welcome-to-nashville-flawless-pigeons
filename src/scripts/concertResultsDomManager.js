@@ -4,7 +4,7 @@ const concertResultsDomManager = {
         <section id="concert-${index}" class="saved_concert">
         <div id="artist-${index}">${concert._embedded.attractions[0].name}</div>
         <div id="venue-${index}">${concert._embedded.venues[0].name}</div>
-        <button id="save-concert-button-${index}">Save Concert</button>
+        <button id="save-concert-button-${index}">Add &#11088</button>
         </section>
         `;
     },
