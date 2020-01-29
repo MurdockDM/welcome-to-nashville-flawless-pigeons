@@ -9,7 +9,7 @@ const favoriteEventHandlerArt = (evt) => {
     // console.log(childNode[1].textContent)
 
     const locationDiv = document.getElementById(`location-${index}`);
-    const infoToSave = `${artworkDiv.textContent.trim()} at ${locationDiv.textContent.trim()}`;
+    const infoToSave = `<strong>Art: </strong>${artworkDiv.textContent.trim()} at ${locationDiv.textContent.trim()}`;
     const itinerary = document.getElementById("artContainer");
     itinerary.innerHTML = infoToSave;
 

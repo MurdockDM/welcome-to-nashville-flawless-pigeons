@@ -6,7 +6,7 @@ const restaurantItinerarySaveHandler = (evt) => {
     const restaurantName = document.getElementById(`restaurant-${index}`);    
     const restaurantAddress = document.getElementById(`restaurantAddress-${index}`);
 
-    const savedRestaurantInfo = `Restaurant:${restaurantName.textContent.trim()} at ${restaurantAddress.textContent.trim()} </article>`
+    const savedRestaurantInfo = `<strong>Restaurant:</strong>${restaurantName.textContent.trim()} at ${restaurantAddress.textContent.trim()} </article>`
     
     const savedRestaurantSection = document.getElementById("restaurantsContainer")
 
