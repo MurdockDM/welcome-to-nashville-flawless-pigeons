@@ -2,11 +2,12 @@ const concertResultsDomManager = {
     concertFactory(concert, index) {
         return `
         <section id="concert-${index}" class="saved_concert">
-        <div id="artist-${index}">${concert._embedded.attractions[0].name}</div>
-        <div id="venue-${index}">${concert._embedded.venues[0].name}</div>
-        <a target="_blank" id="url-${index}" href="${concert._embedded.attractions[0].url}">Buy Tickets</a>
-        <br>
         <button class="add_button" id="save-concert-button-${index}">Add &#127928</button>
+        <span id="artist-${index}">&nbsp &nbsp &nbsp ${concert._embedded.attractions[0].name}</span>
+        <br>
+        <a target="_blank" id="url-${index}" href="${concert._embedded.attractions[0].url}">Find Tickets</a>
+        <span id="venue-${index}">&nbsp ${concert._embedded.venues[0].name}</span>
+        <br>
         <br></br>
         </section>
         `;
