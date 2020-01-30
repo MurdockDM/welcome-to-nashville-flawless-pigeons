@@ -4,18 +4,18 @@ const searchResultsDomManagerArt = {
 
         return `
         <section id="artwork-${index}" class="artwork">
-            <div id="artAndArtist-${index}" class="artwork_location">
-            ${artwork.artwork} by ${artwork.first_name} ${artwork.last_name}
-            </div>
-            <div id="location-${index}" class="art-location">
-            ${artwork.location}
-            </div>
-            <a target="_blank" id="art-url-${index}" class="art-url" href="${artwork.page_link.url}">More Info
-            </a>
-            <br>
             <button class="add_button" id="favorite-${index}" class="artwork_favorite">
-            Add &#128396
+            Add &#127912;
             </button>
+            <span id="artAndArtist-${index}" class="artwork_location">
+            &nbsp ${artwork.artwork} by ${artwork.first_name} ${artwork.last_name}
+            </span>
+            <br>
+            <a target="_blank" id="art-url-${index}" class="art-url" href="${artwork.page_link.url}">More Info</a>
+            <span id="location-${index}" class="art-location">
+            &nbsp ${artwork.location}
+            </span>
+            <br>
             <br></br>
         </section>
         `;

@@ -1,3 +1,12 @@
+## Instructions for project installation
+1. First, clone down the project files from here using the git terminal command: (git clone git@github.com:nss-day-cohort-38/welcome-to-nashville-flawless-pigeons.git)
+2. Find the file location of the recently pulled down project in the terminal.
+3. Create a file named “zomatoAPIKey.js” in this location (welcome-to-nashville-flawless-pigeons/src/scripts/zomatoAPI). Go to: https://developers.zomato.com/api to request your personal API key. In that file add in your API key by typing (zomatoAPIKey=“YOUR_API_KEY_HERE”).
+4. Create a file named “concertsAPIkey.js” in this location (welcome-to-nashville-flawless-pigeons/src/scripts/concert_scripts). Go to: https://developer.ticketmaster.com/products-and-docs/apis/discovery-api/v2/ to request your personal API key. In that file add in your API key by typing (concertsApiKey = “apikey=YOUR_API_KEY_HERE”).
+5. In your terminal type (hs -o) to start the HTTP server and automatically open a new tab in your web browser.
+6. Use the search boxes to find related parks, art, concerts, and restaurants around the Nashville area. After you find something you like, you can hit the “Add” button to add that item to your itinerary which will appear above the search results.
+
+
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
 In this app users can search for four different things to do/visit in Nashville:
